@@ -35,7 +35,7 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
 
  The following example shows the entire process, leaving out steps like setting up a template engine, etc.
 
-## Example:
+## Example:	
  ``` javascript
  // Require modules
  var express = require('express');
@@ -90,4 +90,6 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
  Notes
  -----
  This is a work in progress. It likely contains far too much of the Express rendering function and can be much improved.
+ Based on looking at Express, it looks like stand-alone view rendering will be a feature of Express 3.x via app.render, 
+ which will make this lib obsolete.
 
