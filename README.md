@@ -39,16 +39,20 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
  ``` javascript
  // Require modules
  var express = require('express');
- var expressRender = require('express-render');
 
  // Initalize Express
  var app = express.createServer();
 
- // Initialize express-render
- expressRender.init(express, app);
+ // Initialize expressRender
+ var expressRender = require('express-render').init(app);
 
  // Set up Templating Engine, View directory, etc
  // ...
+
+ // Add expressRender helpers
+ expressRender.helpers({
+ 	title: "A consistent title is important"
+});
 
  // Set up responder
  app.get("/", function(req, res) {
