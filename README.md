@@ -30,6 +30,7 @@ Features
 --------
 * Helpers and global variables
 * Layout support
+* Separate Views location
 
 How to Use
 -----------
@@ -59,8 +60,11 @@ How to Use
  	title: "A consistent title is important"
 });
 
+// Customize views directory
+expressRender.views(__dirname + '/app/views/emails');
+
 // Set up a layout to use as the default (otherwise it defaults to 'layout')
-expressRender.layout('emails/layout.html');
+expressRender.layout('special_layout');
 
  // Set up responder
  app.get("/", function(req, res) {
