@@ -1,0 +1,28 @@
+{
+  "name": "express-render",
+  "description": "Stand-alone View Rendering for Express",
+  "version": "0.0.1",
+  "author": {
+    "name": "Trey Griffith",
+    "email": "trey.griffith@gmail.com"
+  },
+  "keywords": [
+    "express",
+    "view",
+    "render",
+    "email",
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "main": "./index.js",
+  "engines": {
+    "node": ">= 0.4.1 < 0.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/treygriffith/express-render.git"
+  },
+  "homepage": "https://github.com/treygriffith/express-render"
+}
