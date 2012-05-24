@@ -13,8 +13,8 @@ express-render
  sent back as part of the response.
 
 
- Installation
- ------------
+Installation
+-------------
 
 Through [NPM](http://www.npmjs.org) - working on adding to the Registry
  ``` bash
@@ -26,8 +26,8 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
  $ git clone git://github.com/treygriffith/express-render.git node_modules/express-render/
  ```
 
- How to Use
- ----------
+How to Use
+-----------
 
  Require the module, and initialize it, inputting your initialized Express server.
  When you want to render a view, simply pass it a template name, your local variables,
@@ -91,8 +91,8 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
 
  ```
 
- Notes
- -----
+Notes
+-----
  This is a work in progress. It likely contains far too much of the Express rendering function and can be much improved.
  Based on looking at Express, it looks like stand-alone view rendering will be a feature of Express 3.x via app.render, 
  which will make this lib obsolete.
