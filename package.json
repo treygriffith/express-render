@@ -10,7 +10,7 @@
     "express",
     "view",
     "render",
-    "email",
+    "email"
   ],
   "dependencies": {
   },
