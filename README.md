@@ -35,6 +35,7 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
 
  The following example shows the entire process, leaving out steps like setting up a template engine, etc.
 
+## Example:
  ``` javascript
  // Require modules
  var express = require('express');
@@ -43,7 +44,7 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
  // Initalize Express
  var app = express.createServer();
 
- // Initialize Express-render
+ // Initialize express-render
  expressRender.init(express, app);
 
  // Set up Templating Engine, View directory, etc
@@ -52,7 +53,7 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
  // Set up responder
  app.get("/", function(req, res) {
  	
- 	// Asynchronous
+ 	// Asynchronous use of express-render
  	expressRender.render(
  		"mytemplate", 
 	 	{
@@ -66,7 +67,7 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
  		}	
  	);
 
- 	// Synchronous
+ 	// Synchronous use of express-render
  	var rendered_view = expressRender.render(
  		"mytemplate", 
  		{
