@@ -26,6 +26,11 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
  $ git clone git://github.com/treygriffith/express-render.git node_modules/express-render/
  ```
 
+Features
+--------
+* Helpers and global variables
+* Layout support
+
 How to Use
 -----------
 
@@ -53,6 +58,9 @@ How to Use
  expressRender.helpers({
  	title: "A consistent title is important"
 });
+
+// Set up a layout to use as the default (otherwise it defaults to 'layout')
+expressRender.layout('emails/layout.html');
 
  // Set up responder
  app.get("/", function(req, res) {
