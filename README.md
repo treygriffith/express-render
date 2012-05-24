@@ -44,7 +44,7 @@ Through [NPM](http://www.npmjs.org) - working on adding to the Registry
  var app = express.createServer();
 
  // Initialize expressRender
- var expressRender = require('express-render').init(app);
+ var expressRender = require('express-render').init(express, app);
 
  // Set up Templating Engine, View directory, etc
  // ...
